@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+<!--Extendendo conteudo da pagina layout-->
+
+<!--Levando esse conteudo para pagina layout-->
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+<!--Levando esse conteudo para pagina layout-->
+{% block content %}
+    <div id="container">
+        <h1>Vídeos</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in itens %}
+            <div class="card" id="{{item.id}}">
+                <div class="card_imageContainer {{'featured_class'  if item.featured}}">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Video de Apresentação">
+
+                    {% if item.featured %}
+                        <div class="featured">Destaque</div>
+                    {% endif %}
+
+                </div>
+
+                <div class="card_content">
+                    <p>{{item.title}}</p>
+                </div>
+
+                <div class="card_info">
+                    <p>{{item.duration}}</p>
+                    <p class="card_price">{{item.price}}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <div class="modal-content">
+
+                <iframe controls="Autoplay" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        {% block head %}{% endblock %}
+        <link rel="stylesheet" href="/styles.css">
+        <title>Minha Pagina</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portifolio">Vídeos</a>
+            </div>
+        </header>
+
+        <!--Substituir conteudo de maneira dinâmica-->
+        {% block content %}{% endblock %}
+
+        <footer>
+            <div class="espaco"></div>
+        </footer>
+    </body>
+
+</html>

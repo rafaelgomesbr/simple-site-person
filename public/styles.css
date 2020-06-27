@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap");
+
+:root {
+  --green: #50fa7b;
+  --roxo: #7159c1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #282a36;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+header {
+  padding: 32px;
+  border-bottom: 1px solid #333;
+  background: rgb(0, 0, 0, 0.1);
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: rgb(236, 236, 236);
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 16px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--green);
+  transition: color 300ms;
+}
+
+#container {
+  text-align: center;
+  padding: 32px;
+}
+
+#container img {
+  width: 220px;
+  border-radius: 50%;
+  border: 5px solid var(--green);
+}
+
+#container h1 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+#container h2 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+#container p {
+  max-width: 500px;
+  margin: 4px auto;
+  font-size: 15px;
+  line-height: 20px;
+}
+#container p a {
+  color: var(--green);
+}
+#links-footer a {
+  border-bottom: 1px solid var(--green);
+}
+
+.espaco {
+  padding: 50px;
+}
+/*============================== CARDS ==============================*/
+
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--roxo);
+  cursor: pointer;
+  display: grid;
+}
+
+.card_imageContainer img {
+  width: 100%;
+}
+.card_content {
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 500;
+}
+.card:hover {
+  opacity: 70%;
+  transition: opacity 200ms;
+}
+.card_content {
+  padding: 18px;
+}
+.card_info {
+  padding: 25px;
+}
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 400;
+  align-items: center;
+}
+.card_info p {
+  font-size: 12px;
+  line-height: 22px;
+  border: 15px 0;
+}
+
+.card_price {
+  background-color: var(--roxo);
+  filter: brightness(85%);
+  padding: 5px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/*==============================MODAL==============================*/
+
+.modal-overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  max-width: 50%;
+  width: auto;
+  height: 80%;
+  margin: 10vh auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal .close-modal {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+/*=========================== MODAL ATIVO ==============================*/
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
+
+/*=============== FEATURED =================*/
+
+.featured_class.card_imageContainer {
+  position: relative;
+}
+
+.featured {
+  background-color: #fdd122;
+  border-radius: 20px;
+  position: absolute;
+  font-size: small;
+  color: #111;
+  padding: 2px 8px;
+  right: 5px;
+  top: -11px;
+}
+
+/* ============= Video Page ============*/
+
+.video {
+  margin: 0 auto;
+  max-width: 800px;
+  }
+
+  .video .card{
+      cursor: initial;
+  }
+
+.card_video-Container {
+  position: relative;
+  padding-top: 62.5%;
+  width: 100%;
+}
+
+.card_video-Container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
