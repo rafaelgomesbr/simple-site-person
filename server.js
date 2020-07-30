@@ -25,7 +25,7 @@ server.get("/", function (req, res) {
   //Conteudo que vai ser enviado até o about.njk
   const about = {
     avatar:
-      "https://instagram.fmab1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/98475559_176730757004748_4485427540403937781_n.jpg?_nc_ht=instagram.fmab1-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=u2Ln-XPLsLgAX_2DPQ4&oh=ed41eeea1161fbe9c4249b4e9844e3d9&oe=5F107984",
+      "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/534384101637051.5f232251c2f26.jpg",
     name: "Rafael Souza",
     cargo: "Desenvolvedor - Full Stack",
     description:
