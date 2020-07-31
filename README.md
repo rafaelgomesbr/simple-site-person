@@ -14,6 +14,7 @@ Website developed using the nunjux template engine.
 
 # Usage
 1. Fork the repo and then clone it or download it.
+2. The main login is: admin, and password: 1234.
   
 # Site-images
 <a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2525a9101637051.5f2364dde4e52.png" alt="GitAds"/> </a>
