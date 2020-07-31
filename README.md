@@ -4,34 +4,20 @@ Website developed using the nunjux template engine.
  
 # Quick liks
 1. [Requirements](#requirements)
-2. [Usage](#usage)
 2. [Images](#Site-images)
 
  
 
 # Requirements
-1. [Node.js](https://nodejs.org/) installed on the computer.
+1. It is necessary to create a database with the name "login" and import the file login.sql into the bank.
+2. The [XAMPP](https://www.apachefriends.org/pt_br/index.html) program was used to emulate an apache server and an sql server.  
 
 # Usage
 1. Fork the repo and then clone it or download it.
-
-2. First install all dependencies:
-    ```bash
-    # with npm
-    npm install
-    
-    # or with yarn
-    yarn
-    ```
-    
-3. Start the server and access it through the browser:
-     ```bash
-     npm start
-      ```
-    * in the browser ->
-     localhost:5000
   
 # Site-images
-<a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/0fb927101637051.5f2318f6935e5.png" alt="GitAds"/> </a>
+<a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2525a9101637051.5f2364dde4e52.png" alt="GitAds"/> </a>
 
-<a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2f8ada101637051.5f2318f692e30.png"/> </a>
+<a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/44627e101637051.5f2364dde4779.png"/> </a>
+
+<a> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/25d3b0101637051.5f2364dde5523.png"/> </a>
