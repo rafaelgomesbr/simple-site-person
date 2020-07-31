@@ -1,6 +1,7 @@
 # Small profile and portfolio
 
-Website developed using the nunjux template engine.
+* Website developed using the pha and sql.
+* The project is incomplete.
  
 # Quick liks
 1. [Requirements](#requirements)
